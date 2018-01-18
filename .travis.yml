@@ -5,7 +5,6 @@ cache:
   directories:
   - node modules
 script: 
-  - npm build
   - npm test -- --coverage && cat ./coverage/lcov.info | coveralls 
 deploy:
   provier: pages
