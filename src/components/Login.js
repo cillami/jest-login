@@ -59,7 +59,7 @@ class Login extends Component {
             onChange={this.handleChange}
             value={this.state.email}
             placeholder="zero@cool.gg"
-            className="my-4 p-2 rounded shadow border w-full"
+            className="my-4 p-2 rounded shadow border w-full email"
           />
         </label>
         <label htmlFor="password" className="mb-4  w-full">
