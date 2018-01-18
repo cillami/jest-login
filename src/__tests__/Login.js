@@ -20,7 +20,7 @@ it("simulate login success", () => {
 
 // handleChange = ({ target }) => this.setState({ [target.name]: target.value });
 
-it.skip("handle change, target", () => {
+/* it("handle change, target", () => {
   const fakeLogin = jest.fn();
   const wrapper = mount(<Login loginSuccessful={fakeLogin} />);
   const value = "hejhej";
@@ -31,3 +31,4 @@ it.skip("handle change, target", () => {
   wrapper.setState({ email: value });
   wrapper.instance().handleChange(value);
 });
+*/
