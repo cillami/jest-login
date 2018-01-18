@@ -4,13 +4,14 @@ node_js:
 cache:
   directories:
   - node modules
+  yarn: true
 script: 
-  - npm build
-  - npm test -- --coverage && cat ./coverage/lcov.info | coveralls 
+  - yarn build
+  - yarn test --coverage && cat ./coverage/lcov.info | coveralls 
 deploy:
   provider: pages
-  skip-cleanup: true
-  github-token: $GITHUB_TOKEN
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
   local-dir: build
   on:
     branch: master
